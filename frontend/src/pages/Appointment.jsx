@@ -111,7 +111,9 @@ const Appointment = () => {
   },[doctors,docId])
 
   useEffect(()=>{
+    if (docInfo) {
     getAvaiableSlots()
+  }
   },[docInfo])
 
   useEffect(()=>{
