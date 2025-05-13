@@ -1,7 +1,7 @@
 import express from 'express'
 
 import { bookAppointment, cancelAppointment, getProfile, listAppointment, loginUser, paymentRazorpay, registerUser, updateProfile, verifyRazorpay } from "../controllers/userController.js"
-import authUser from '../middlewares/authuser.js'
+import authUser from '../middlewares/authUser.js'
 import upload from '../middlewares/multer.js'
 
 const userRouter=express.Router()
